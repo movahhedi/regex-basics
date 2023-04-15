@@ -6,6 +6,13 @@
 	"author": "Shahab Movahhedi <dev@shmovahhedi.com>",
 	"license": "MIT",
 	"type": "module",
+	"scripts": {
+		"start": "vite",
+		"client": "vite",
+		"build": "vite build --force",
+		"production": "vite build --force",
+		"preview": "vite preview"
+	},
 	"devDependencies": {
 		"@types/jquery": "^3.5.16",
 		"jquery": "^3.6.4",
