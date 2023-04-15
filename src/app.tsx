@@ -11,7 +11,7 @@ function trigger(el: Element, eventType: string) {
 }
 
 // const Delimiter = "----------------------------------------------------\r\n",
-const Delimiter = /\-{10,}\r\n/,
+const Delimiter = /\-{10,}\r?\n/,
 	KeyCode_Left = 37,
 	KeyCode_Up = 38,
 	KeyCode_Right = 39,
@@ -23,11 +23,7 @@ let Name = "RegEx Basics by Shahab Movahhedi",
 	Page = 0,
 	AllPages = Pages.length - 1;
 
-console.log(Content);
-
 const LoadPage = (page = 0) => {
-	console.log(Pages);
-
 	document.getElementById("MainContent").innerHTML = (Pages[page] as string).replace(
 		"DTNOW",
 		new Date().toISOString().slice(0, 19).replace("T", " ")
