@@ -1,0 +1,22 @@
+{
+	"name": "regex-basics",
+	"version": "0.0.1",
+	"main": "index.js",
+	"repository": "https://github.com/movahhedi/regex-basics",
+	"author": "Shahab Movahhedi <dev@shmovahhedi.com>",
+	"license": "MIT",
+	"type": "module",
+	"devDependencies": {
+		"@types/jquery": "^3.5.16",
+		"jquery": "^3.6.4",
+		"lestin": "^0.0.12",
+		"sass": "^1.62.0",
+		"typescript": "^5.0.4",
+		"vite": "^4.2.1"
+	},
+	"cspell": {
+		"words": [
+			"DTNOW"
+		]
+	}
+}

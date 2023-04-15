@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+	border: unset;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #1e1e1e;
+	color: white;
+	font-family: Consolas, monospace;
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+	line-height: 1.2;
+	tab-size: 4;
+
+	&.LightMode {
+		color: #1e1e1e;
+		background-color: white;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 2px;
+	height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #007fff;
+	border-radius: 13px;
+}
+
+#LineNumbers {
+	display: inline-block;
+	vertical-align: top;
+	width: 5%;
+	margin-right: 2%;
+	font-size: 50px;
+}
+.Line {
+	width: 100%;
+	color: gray;
+	text-align: right;
+	margin: 0;
+}
+#Content {
+	display: inline-block;
+	vertical-align: top;
+	width: 93%;
+	text-align: start;
+	margin: 0;
+	white-space: pre;
+	font-size: 50px;
+}
+#MainContent {
+	all: inherit;
+	display: block;
+}
+
+a-bold,
+a-azure,
+a-comment,
+a-string,
+a-att,
+a-tag,
+a-gray {
+	all: inherit;
+	display: inline;
+}
+.bold {
+	font-weight: 600;
+}
+.azure {
+	color: #007fff;
+}
+.comment {
+	color: #6a9955;
+}
+.string {
+	color: #d2947b;
+}
+.att {
+	color: #9cdfff;
+}
+.tag {
+	color: #4ca4db;
+}
+.gray {
+	color: #828282;
+}
+.red {
+	color: red;
+}
+.big {
+	display: inline-block;
+	font-size: 70px;
+}
+.small {
+	display: inline-block;
+	font-size: 25px;
+}
+
+*::selection,
+.sel {
+	background-color: #264f78;
+	border-radius: 10px;
+}
+
+#Input {
+	all: inherit;
+	display: block;
+	resize: none;
+	overflow: hidden;
+	width: 100%;
+	/* min-height: 50px;
+	max-height: 100px; */
+	border-right: 3px solid #ff8000;
+	border-bottom: 1px solid #007fff;
+}
+
+#Input:placeholder-shown {
+	background: transparent;
+	border-bottom: none;
+}
+
+input,
+textarea {
+	all: inherit;
+	display: inline;
+
+	&:placeholder-shown {
+		border-bottom: 1px solid #007fff;
+	}
+}
+
+#Copyright {
+	position: fixed;
+	display: inline-block;
+	vertical-align: top;
+	right: 10px;
+	bottom: 10px;
+	text-align: left;
+	margin: 0;
+	font-size: 30px;
+}
+
+img {
+	max-width: 100%;
+}
+
+.inline {
+	display: inline;
+}
