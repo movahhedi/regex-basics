@@ -22,7 +22,11 @@ let Name = "RegEx Basics by Shahab Movahhedi",
 	Page = 0,
 	AllPages = Pages.length - 1;
 
+console.log(Content);
+
 const LoadPage = (page = 1) => {
+	console.log(Pages);
+
 	document.getElementById("MainContent").innerHTML = (Pages[page] as string).replace(
 		"DTNOW",
 		new Date().toISOString().slice(0, 19).replace("T", " ")
