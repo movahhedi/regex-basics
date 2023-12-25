@@ -35,14 +35,14 @@ const LoadPage = (page = 0) => {
 };
 
 document.addEventListener("keydown", (event) => {
-	if (!event.ctrlKey) return;
+	// if (!event.ctrlKey) return;
 
-	if (event.keyCode === KeyCode_Left) {
+	if (event.keyCode === KeyCode_Left || event.key === "-") {
 		if (Page <= 0) {
 			Page = AllPages;
 		} else Page--;
 		LoadPage(Page);
-	} else if (event.keyCode === KeyCode_Right) {
+	} else if (event.keyCode === KeyCode_Right || event.key === "+") {
 		if (Page >= AllPages) {
 			Page = 0;
 		} else Page++;
@@ -73,6 +73,8 @@ const PageContent = (
 					e.currentTarget.removeAttribute("rows");
 				}}
 				onKeyDown={(e) => {
+					e.stopPropagation();
+
 					e.currentTarget.spellcheck = false;
 					if (e.key == "Tab") {
 						// get caret position/selection
